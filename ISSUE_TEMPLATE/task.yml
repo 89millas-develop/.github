@@ -1,0 +1,31 @@
+name: Internal Task / Chore
+description: Create a task for internal work, technical debt, or chores.
+title: "[Task]: "
+labels: ["chore"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This template is intended for internal team use to track chores and technical tasks.
+  - type: textarea
+    id: description
+    attributes:
+      label: Task Description
+      description: Describe the task that needs to be completed.
+    validations:
+      required: true
+  - type: textarea
+    id: dod
+    attributes:
+      label: Definition of Done (DoD)
+      description: What criteria must be met for this task to be considered complete? (e.g., tests pass, code reviewed, deployed)
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Technical Notes / References
+      description: Add any technical context, links to documentation, or related PRs/issues.

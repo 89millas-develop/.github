@@ -1,0 +1,36 @@
+name: Epic / Project
+description: Define a large initiative or epic that spans multiple smaller tasks.
+title: "[Epic]: "
+labels: ["epic"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to outline high-level initiatives.
+  - type: textarea
+    id: goal
+    attributes:
+      label: Business Value / Goal
+      description: What is the primary objective of this epic? Why are we doing this?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included in this epic?
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of Scope
+      description: What is explicitly NOT included in this epic?
+  - type: textarea
+    id: tasks
+    attributes:
+      label: Sub-tasks / Checklist
+      description: Provide a checklist of the smaller issues that make up this epic. You can link them here once created.
+      placeholder: |
+        - [ ] Issue #1: Setup Database
+        - [ ] Issue #2: Create API Endpoints
